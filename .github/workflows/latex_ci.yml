@@ -15,7 +15,7 @@ jobs:
       - name: Build LaTeX file
         uses: Zero-Trust/latexBuild@master
         with: 
-          element_files: |
+          root_file: |
             main.tex
           compiler: latexmk
           args: '-cd -r ./.latexmkrc -f -gg'
